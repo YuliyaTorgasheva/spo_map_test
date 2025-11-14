@@ -40,13 +40,15 @@ h3 {
   display: flex;
   gap: 20px;
   margin: 20px auto;
-  max-width: 2000px; /* увеличена с 1200px до 1600px */
+  max-width: 2200px; /* увеличена ширина основного контейнера */
   flex-wrap: nowrap;
   align-items: flex-start;
+  padding: 0 20px; /* добавлены боковые отступы для визуального комфорта */
+  box-sizing: border-box;
 }
 
 #map {
-  width: 75%; /* увеличена с 60% до 75% */
+  width: 80%;  /* увеличена ширина карты */
   height: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -55,8 +57,8 @@ h3 {
 }
 
 #info {
-  width: 23%; /* уменьшена с 38% до 23%, чтобы вместе с картой занимали 98% */
-  max-height: 800px;
+  width: 18%; /* уменьшена ширина панели с информацией */
+  max-height: none;
   padding: 20px;
   background: white;
   border-radius: 10px;
@@ -216,6 +218,7 @@ h3 {
   line-height: 1.5;
   max-height: 780px;
   overflow-y: auto;
+  padding-right: 10px; /* Чтобы скролл не перекрывал контент */
 }
 
 .card-title {
