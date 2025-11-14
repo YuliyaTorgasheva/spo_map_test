@@ -1,9 +1,9 @@
 // --- Инициализация карты ---
 const map = new maplibregl.Map({
     container: 'map',
-    style: 'https://demotiles.maplibre.org/style.json', // полностью бесплатный, без ключа
+    style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json', // полностью бесплатный, без ключа
     center: [37, 55],
-    zoom: 5
+    zoom: 4
 });
 
 
