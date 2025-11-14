@@ -5,6 +5,8 @@
     <title>Дашборд муниципалитетов</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
     <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
@@ -36,31 +38,27 @@
     <h1>Карта доступности СПО в муниципальных образованиях России</h1>
 
     <!-- Фильтр по УГС -->
-    <div id="ugs-filter-container">
-    <strong style="font-size:12px;">Фильтр по УГС:</strong>
-
-    <div id="ugs-dropdown" class="dropdown">
-        <button id="ugs-dropdown-btn" class="dropdown-btn">Выбрать УГС ▼</button>
-
-        <div id="ugs-checkboxes" class="dropdown-content">
-            <!-- чекбоксы вставляются JS -->
+    <div id="ugs-filter-container" style="max-width: 900px; margin: 20px auto; padding: 10px;">
+        <strong style="font-size:14px;">Фильтр по УГС:</strong>
+        <div id="ugs-dropdown" class="dropdown" style="display: inline-block; position: relative; margin-left: 10px;">
+            <button id="ugs-dropdown-btn" class="dropdown-btn">Выбрать УГС ▼</button>
+            <div id="ugs-checkboxes" class="dropdown-content"></div>
         </div>
-    </div>
-
-    <button id="apply-filter">Применить фильтр</button>
-    <button id="clear-filter">Сбросить фильтр</button>
-</div>
+        <button id="apply-filter" class="filter-button">Применить фильтр</button>
+        <button id="clear-filter" class="filter-button">Сбросить фильтр</button>
+        </div>
 
 
 
-    <div id="dashboard">
+
+    <div id="dashboard" style="max-width: 1200px; margin: auto;">
         <div id="map"></div>
         <div id="info">
             <h2>Выберите муниципалитет</h2>
             <p>Информация появится здесь при клике на полигон.</p>
             <div id="chart"></div>
         </div>
-    </div>
+        </div>
 
     <!-- Таблицы с соседями -->
     <div id="colleges-table" style="margin-top:20px;"></div>
