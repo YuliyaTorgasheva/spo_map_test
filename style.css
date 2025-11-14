@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 0.8em;
+}
+
+/* Контейнер карты и панели */
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+#map {
+    width: 60%;
+    height: 800px;
+    border-radius: 6px;
+}
+
+#info {
+    width: 38%;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Фильтр по УГС */
+#ugs-filter-container {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#ugs-checkboxes {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#ugs-filter-container button {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+/* Таблица колледжей */
+#colleges-table {
+    width: 90%;          /* чуть уже, чем полный блок */
+    max-width: 900px;    /* ограничение по ширине */
+    margin: 20px auto;   /* по центру с отступами сверху/снизу */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Блок пояснений */
+#description {
+    max-width: 900px;    /* делаем такой же, как таблица */
+    width: 100%;         /* занимает всю ширину контейнера */
+    padding: 20px;       /* внутренние отступы */
+    margin: 20px auto;   /* центрируем */
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+
+/* Шапка таблицы */
+#colleges-table th {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd; /* Тонкая граница */
+    font-weight: bold;
+}
+
+/* Ячейки таблицы */
+#colleges-table td {
+    padding: 12px; /* Отступы в ячейках */
+    border: 1px solid #ddd; /* Тонкая граница */
+    text-align: left;
+}
+
+/* Отступы по бокам таблицы */
+#colleges-table {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для ссылок в таблице */
+#colleges-table a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#colleges-table a:hover {
+    text-decoration: underline;
+}
+
+/* Чередование фона строк для лучшей читаемости */
+#colleges-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#colleges-table tr:hover {
+    background-color: #ddd; /* Подсветка при наведении */
+}
+
+
+/* Пояснения */
+#description {
+    clear: both;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Легенда */
+#map-legend {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background: #fff;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.dropdown-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    background: #e3e3e3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* Отступ фильтра слева */
+#ugs-filter-container {
+    margin-left: 20px;   /* ← основной отступ слева */
+    margin-top: 10px;
+}
+
+#ugs-filter-container strong {
+    margin-left: 2px;
+}
+
+#ugs-dropdown {
+    margin-left: 2px;
+}
+
+#apply-filter,
+#clear-filter {
+    margin-left: 2px;
+}
